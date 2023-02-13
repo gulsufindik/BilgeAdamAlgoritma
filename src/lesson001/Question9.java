@@ -19,7 +19,7 @@ public class Question9 {
 		System.out.println("Ortalama giriniz ");
 
 		ortalama = scanner.nextDouble();
-		if (ortalama > 100 || ortalma < 0) {
+		if (ortalama > 100 || ortalama < 0) {
 			System.out.println("lütfen geçerli değerler girin");
 		} else {
 			if (ortalama >= 90) {
