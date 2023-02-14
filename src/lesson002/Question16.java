@@ -8,13 +8,13 @@ public class Question16 {
 		// Kullanıcıdan aldığımız sayı haftanın hangi gününe denk gelir bulalım
 		// Bugün hafta sonu mu hafta içi mi kontrol edelim
 		// switch case
-		
+
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Lütfen 1 ile 7 arasında sayı giriniz");
 		int gun = scanner.nextInt();
-		
-		String durum = "Hafta içi" ;
-		if(gun >= 6 && gun <= 7) {
+
+		String durum = "Hafta içi";
+		if (gun >= 6 && gun <= 7) {
 			durum = "hafta sonu";
 		}
 		switch (gun) {
@@ -22,7 +22,7 @@ public class Question16 {
 			System.out.println("Pazartesi" + durum);
 			break;
 		case 2:
-			System.out.println("Sali "+ durum);
+			System.out.println("Sali " + durum);
 			break;
 		case 3:
 			System.out.println("Çarşamba " + durum);
@@ -36,7 +36,7 @@ public class Question16 {
 		case 6:
 			System.out.println("Cumartesi " + durum);
 			break;
-			
+
 		default:
 			break;
 		}
@@ -50,32 +50,7 @@ public class Question16 {
 		default:
 			System.out.println("Hatalı bir değer girdiniz");
 			break;
-		
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
 	}
-
 }
