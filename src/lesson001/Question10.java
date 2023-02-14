@@ -24,5 +24,4 @@ public class Question10 {
 		}
 		System.out.println("En Büyük sayi :" + enBuyuk);
 	}
-
 }
