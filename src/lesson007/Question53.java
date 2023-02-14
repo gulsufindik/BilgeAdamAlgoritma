@@ -6,43 +6,35 @@ public class Question53 {
 
 	public static void main(String[] args) {
 		// iki kez üst üste aynı sayı
-		// klavyeden girilene kadar döngü devam edecek
-		// üst üste iki sayı girildiğinde o zamana kadar girilen sayıların ortalamasını veren program
-		
+		// klavyeden girilene kadar döngü
+		// devam edecek
+		// üst üste iki sayı girildiğinde
+		// o zaman kadar girilen sayıların
+		// ortalamasını veren program
+
+		// 1 2 5 9 8 7 7
+
 		Scanner scanner = new Scanner(System.in);
-		
+
 		boolean kontrol = true;
-		int eskiSayi = 0;
-		int sayi = 0;
-		int toplam = 0;
-		int ortalama = 0;
-		int sayac = 0;
-		
-		while(kontrol) {
+		double eskiSayi = 0;
+		double sayi = 0;
+		double toplam = 0;
+		double ortalama = 0;
+		double sayac = 0;
+
+		while (kontrol) {
 			System.out.println("Lütfen bir sayı giriniz");
 			sayi = scanner.nextInt();
-			if( sayi != eskiSayi) {
-				toplam += sayi;
+			if (sayi != eskiSayi) {
+				toplam = toplam + sayi;
 				eskiSayi = sayi;
 				sayac++;
 			} else {
 				kontrol = false;
 			}
-		} ortalama = toplam/sayac;
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
+		}
+		ortalama = toplam / sayac;
+		System.out.println(ortalama);
 	}
-
 }

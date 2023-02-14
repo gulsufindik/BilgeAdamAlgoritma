@@ -4,15 +4,18 @@ public class Question57 {
 
 	public static void main(String[] args) {
 		// topla methodu yazalım
+
 		// toplam sonucunu kontrol edelim
-		// sayının 10'dan büyük olup olmadığını bulalım
+		// sayının 10 dan büyük olup olmadıgını bulalım
+
+		// metot boolean değer dönsün
+		// 18 den büyükse ve eşitse true
+		// küçükse false
 
 		int toplamSonuc = toplayici(5, 5);
-		if (toplamSonuc > 10) {
-			System.out.println("10'dan büyük");
-		} else {
-			System.out.println("10'dan küçük veya eşit");
-		}
+		boolean kontrol = ondanBuyukKontrol(toplamSonuc);
+
+		System.out.println(kontrol ? "Mekana girebilirsiniz" : " Mekana giremezsiniz");
 	}
 
 	private static int toplayici(int sayi1, int sayi2) {
@@ -20,10 +23,10 @@ public class Question57 {
 		return toplam;
 	}
 
-	private static boolean ondanByukKontrol(int sayi) {
+	private static boolean ondanBuyukKontrol(int sayi) {
 		if (sayi < 18) {
-			return toplam;
+			return false;
 		}
+		return true;
 	}
-
 }
