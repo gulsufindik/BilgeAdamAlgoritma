@@ -65,4 +65,32 @@ public class Question69 {
 		return yeniDizi;
 
 	}
+	// plakaBul(iller,"Ankara","Karaman");
+	// parametre olarak array ve sınırsız sayıda String olarak şehir alsın
+	// girilen şehirlerin plakalarını yazdırsın
+	
+	public static void plakaBul(String[] array, String...strings il) {
+		for (int i = 0; i < array.length; i++) {
+			for (int j= 0; j< il.length; j++) {
+				if(array[i].equals(il[j])) {
+					if(i<9) {
+						System.out.println("0"+(i+1)+"-"+ array[i]);
+					} else {
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 }
