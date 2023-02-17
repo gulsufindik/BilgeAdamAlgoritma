@@ -29,41 +29,47 @@ public class Main {
 		
 		Product product1 = new Product();
 		product1.setName("asus");
-		product1.setPrice(15000);
-		product1.setStock(100);
+		product1.setPrice(1500);
+		product1.setStock(6);
 		product1.bilgileriGoster();
 		
-		Product product2 = new Product("apple", 100, 20000);
+		Product product2 = new Product("apple", 100, 2000);
 		product2.bilgileriGoster();
 		product2.ismiGuncelle("apple2");
 		product2.bilgileriGoster();
 		
-		
-		String[] array = new String[10];
-		array[0] = "ahmet";
-		
-		Product[] products = new Product[10];
-		products[0] = product1;
-		
+	
 		System.out.println("*****************");
 		Sepet sepet1 = new Sepet();
 		
+		System.out.println(product1.isActive());
 		System.out.println(product1.getStock());
 		System.out.println(sepet1.getTotalPrice());
 		sepet1.sepeteEkle(product1);
-		sepet1.sepeteEkle(product2);
+		sepet1.sepeteEkle(product1);
 		sepet1.sepeteEkle(product2);
 		sepet1.sepeteEkle(product1);
 		sepet1.sepeteEkle(product2);
-		sepet1.sepeteEkle(product2);
-		sepet1.sepeteEkle(product1);
-		sepet1.sepeteEkle(product1);
-		sepet1.sepeteEkle(product2);
-		sepet1.sepeteEkle(product2);
-		sepet1.sepeteEkle(product2);
+		System.out.println(sepet1.getTotalPrice());
+		System.out.println(product1.isActive());
+
+		
+		System.out.println("*****************");
+		
+		
+
 		System.out.println(product1.getStock());
 		System.out.println(sepet1.getTotalPrice());
 		
+		System.out.println("*****************");
+		Product product3 = new Product();
+		System.out.println(product3.isActive());
+		product3.setName("HP");
+		product3.gosterimdenKaldir();
+		System.out.println(product3.isActive());
+		
+		
+		sepet1.sepettekiUrunleriGoster();
 		
 		
 
