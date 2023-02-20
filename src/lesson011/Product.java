@@ -9,6 +9,7 @@ public class Product {
 	private int stock;
 	private int price;
 	private boolean isActive = true;
+	private String productCode;
 
 	// Overloading
 	public Product() {
@@ -21,9 +22,17 @@ public class Product {
 		this.id = RandomGenererateId.generateId();
 		this.stock = stock;
 		this.price = price;
+		this.productCode = RandomGenererateId.generateProductCode(name);
 	}
-	
-	
+
+	public String getProductCode() {
+		return productCode;
+	}
+
+	public void setProductCode(String name) {
+		this.productCode = RandomGenererateId.generateProductCode(name);
+	}
+
 	public boolean isActive() {
 		return isActive;
 	}
@@ -85,12 +94,11 @@ public class Product {
 	public void veriTabanınaKayder() {
 		System.out.println(getName() + " Veri tabanıana kaydedildi");
 	}
-	
+
 	public void gosterimdenKaldir() {
-		if(getStock() <= 0) {
+		if (getStock() <= 0) {
 			setActive(false);
 			System.out.println(getName() + " Gosterimden kaldırıldı");
 		}
 	}
-
 }

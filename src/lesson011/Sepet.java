@@ -36,13 +36,12 @@ public class Sepet {
 	// her ürün eklediğimde product'in stocku azalması lazım
 	// 10 tane den fazla ürün alamasın kullanıcıya bilgi verelim
 
-	
-	//product sınıfının içinde bi değişken tutalım
-	//ürünün aktif mi pasif mi oldugu
-	
-	//Product sınıfının için metot yazalım
-	//aktif olan ürünü gösterimden kaldırsın
-	//boolean isActive = true;
+	// product sınıfının içinde bi değişken tutalım
+	// ürünün aktif mi pasif mi oldugu
+
+	// Product sınıfının için metot yazalım
+	// aktif olan ürünü gösterimden kaldırsın
+	// boolean isActive = true;
 	public void sepeteEkle(Product product) {
 		if (product.getStock() > 0) {
 			if (index >= 10) {
@@ -53,21 +52,23 @@ public class Sepet {
 				this.totalPrice += product.getPrice();
 				product.setStock(product.getStock() - 1);
 				product.gosterimdenKaldir();
+				System.out.println("Sepete eklendi");
 			}
-		}else {
+		} else {
 			System.out.println("ürün stoku bitmiştir");
 		}
 	}
-	//sepetteki ürünleri goster methodu yazalım
-	//for ve ya foreach
-	//1- Ürün ismi
-	//2- Ürün ismi
-	//null değerleri yazdırmayalım
+
+	// sepetteki ürünleri goster methodu yazalım
+	// for ve ya foreach
+	// 1- Ürün ismi
+	// 2- Ürün ismi
+	// null değerleri yazdırmayalım
 	public void sepettekiUrunleriGoster() {
 		int i = 1;
 		for (Product product : products) {
-			if(product != null) {
-				System.out.println(i++ + " "+product.getName());
+			if (product != null) {
+				System.out.println(i++ + " " + product.getName());
 			}
 		}
 	}
