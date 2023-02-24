@@ -1,6 +1,6 @@
 package lesson014;
 
-public class UserManger {
+public class UserManager {
 
 	private final String emailFormat = "@xbanka.com";
 
@@ -22,6 +22,7 @@ public class UserManger {
 		System.out.println(para + " Değerinde kredi başvursu yaptınız");
 		System.out.println("Lütfen onay bekleyin... ");
 	}
+
 
 	public void krediBorcunuOde(Account account, int taksit) {
 		if (account.isKrediAlindimi()) {

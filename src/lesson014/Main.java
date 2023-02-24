@@ -68,19 +68,12 @@ public class Main {
 		
 		//çıktı olarak--> güncel kredi kartı borcunuz ....TL. 
 		
-		//Hesaptan borç ödeyelim
-		//hesap seçip o hesaptan parayı alıp borca yatırsın
-		//her kart borcumuzu ödediğimiz Accountun kredi puanı 10 puan artsın
-		
-		//nakit avans çekelim
-		//nakit avans çekmemiz için bizim kredi Noturmuzun 50 den fazla olması lazım
-		//eğer 50 den fazla ise hesaptaki paranın yarısı kadar nakit avans almış olalım
-		//50 den az ise kredi notunuz yetersizdir ve kredi notumuzu bastırsın
+		//hesaptanKrediBorcunuOde();
 		
 		
 			
 		AccountManager accountManager = new AccountManager();
-		UserManger userManger = new UserManger();
+		UserManager userManger = new UserManager();
 		AdminManager adminManager = new AdminManager();
 
 		Account account = new Account();
@@ -151,4 +144,4 @@ public class Main {
 
 	}
 
-}}
+}
