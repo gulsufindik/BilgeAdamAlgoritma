@@ -8,8 +8,13 @@ public class AdminManager {
 		if (account.isKrediBasvurusu()) {
 			System.out.println("Kredi Başvurnuz Onaylanmıştır. ");
 			account.setMoney(account.getMoney() + account.getIstenenKredi());
+			
+			account.setKrediBorcu(account.getIstenenKredi());
+			account.setKrediAlindimi(true);
+			
 			account.setKrediBasvurusu(false);
 			account.setIstenenKredi(0);
+			
 		} else {
 			System.out.println("Kredi Başvurusu Yok");
 		}

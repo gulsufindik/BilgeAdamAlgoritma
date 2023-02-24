@@ -12,6 +12,9 @@ public class Account {
 	private boolean krediBasvurusu;
 	private int istenenKredi;
 
+	private int krediBorcu;
+	private boolean krediAlindimi;
+
 	public Account() {
 		this.accountNo = randomAccountNo();
 	}
@@ -19,6 +22,27 @@ public class Account {
 	public Account(int money) {
 		this.accountNo = randomAccountNo();
 		this.money = money;
+	}
+
+	public int getKrediBorcu() {
+		return krediBorcu;
+	}
+
+	public void setKrediBorcu(int krediBorcu) {
+		this.krediBorcu = krediBorcu;
+	}
+
+
+	public boolean isKrediAlindimi() {
+		return krediAlindimi;
+	}
+
+	public void setKrediAlindimi(boolean krediAlindimi) {
+		this.krediAlindimi = krediAlindimi;
+	}
+
+	public void setAccountNo(String accountNo) {
+		this.accountNo = accountNo;
 	}
 
 	public boolean isKrediBasvurusu() {
