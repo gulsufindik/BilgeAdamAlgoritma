@@ -50,28 +50,27 @@ public class Main {
 		// krediBasvurusunuOnayla();
 		// kredibaşvurusnun olması lazım
 		// bizim hesabımızı çekmek istediğimiz kadar kredimiktarı hesabımıza düşsün
-		
-		//KrediBasvurusunuReddet()
-		//kredibaşvurusnun olması lazım
-		
-		//Account Nesnesi oluşturdugumuz
-		//Otomatik id atasın
-		
-		//-----
-		
-		//krediBorcunuÖde()
-		//dışardan nakit ödeme
-		//eğer user'ın çekmiş oldugu kredi yoksa ve ya kredi başvurusu reddilmiş ise
-		//işleminizi gerçekleştiremiyoruz
-		//çekilmiş kredi varsa parametre olarak girdiğimiz miktar kadar ödeme yapmış olalım
-		//ve kredi kartı borcundan düşülsün
-		
-		//çıktı olarak--> güncel kredi kartı borcunuz ....TL. 
-		
-		//hesaptanKrediBorcunuOde();
-		
-		
-			
+
+		// KrediBasvurusunuReddet()
+		// kredibaşvurusnun olması lazım
+
+		// Account Nesnesi oluşturdugumuz
+		// Otomatik id atasın
+
+		// -----
+
+		// krediBorcunuÖde()
+		// dışardan nakit ödeme
+		// eğer user'ın çekmiş oldugu kredi yoksa ve ya kredi başvurusu reddilmiş ise
+		// işleminizi gerçekleştiremiyoruz
+		// çekilmiş kredi varsa parametre olarak girdiğimiz miktar kadar ödeme yapmış
+		// olalım
+		// ve kredi kartı borcundan düşülsün
+
+		// çıktı olarak--> güncel kredi kartı borcunuz ....TL.
+
+		// hesaptanKrediBorcunuOde();
+
 		AccountManager accountManager = new AccountManager();
 		UserManager userManger = new UserManager();
 		AdminManager adminManager = new AdminManager();
@@ -105,20 +104,20 @@ public class Main {
 		System.out.println("*****************");
 		System.out.println(account.getMoney());
 		userManger.krediBasvurusundaBulun(account, 17500);
-		
+
 		adminManager.krediBasvurusunuOnayla(account);
 		adminManager.krediBasvurusunuReddet(account);
 		adminManager.krediBasvurusunuOnayla(account);
 		System.out.println(account.getMoney());
-		
+
 		System.out.println(account.getIstenenKredi());
 
 		System.out.println("*****************");
-		
+
 		System.out.println(account3.getMoney());
 		userManger.krediBasvurusundaBulun(account3, 25000);
 		adminManager.krediBasvurusunuOnayla(account3);
-		//adminManager.krediBasvurusunuReddet(account3);
+		// adminManager.krediBasvurusunuReddet(account3);
 		accountManager.accountDetails(account3);
 		userManger.krediBorcunuOde(account3, 5000);
 		userManger.krediBorcunuOde(account3, 15000);
@@ -128,9 +127,8 @@ public class Main {
 		userManger.hesaptanKrediBorcuOde(account3, 6000);
 		System.out.println(account3.getKrediBorcu());
 		System.out.println("Bakiyeniz: " + account3.getMoney());
-		
+
 		System.out.println("*****************");
-		
 
 		// accountManager.depositMoney(account, 200);
 		// accountManager.depositMoney(account, 300);
