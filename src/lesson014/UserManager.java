@@ -23,7 +23,6 @@ public class UserManager {
 		System.out.println("Lütfen onay bekleyin... ");
 	}
 
-
 	public void krediBorcunuOde(Account account, int taksit) {
 		if (account.isKrediAlindimi()) {
 			if (account.getKrediBorcu() < taksit) {
@@ -36,9 +35,7 @@ public class UserManager {
 			System.out.println("Kredi Borcunu Bulunmamakta");
 		}
 	}
-	
-	//
-	
+
 	public void hesaptanKrediBorcuOde(Account account, int taksit) {
 		if (account.isKrediAlindimi()) {
 			if (account.getKrediBorcu() < taksit) {
