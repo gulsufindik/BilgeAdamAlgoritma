@@ -5,13 +5,26 @@ public class Kisi {
 	private String name;
 	private int age;
 	private ECinsiyet cinsiyet;
+	private int salary;
 
-	public Kisi(String name, int age, ECinsiyet cinsiyet) {
+	public Kisi(String name, int age, ECinsiyet cinsiyet,int salary) {
 		super();
 		this.name = name;
 		this.age = age;
 		this.cinsiyet = cinsiyet;
+		this.salary = salary;
 	}
+	
+
+	public int getSalary() {
+		return salary;
+	}
+
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
 
 	public String getName() {
 		return name;
@@ -37,12 +50,16 @@ public class Kisi {
 		this.cinsiyet = cinsiyet;
 	}
 
+
+	
 	@Override
 	public String toString() {
-		return "kisi [name=" + name + ", age=" + age + ", cinsiyet=" + cinsiyet + "]";
+		return "Kisi [name=" + name + ", age=" + age + ", salary=" + salary + "]";
 	}
-	public void elliYasUstuMesaj( ) {
-		System.out.println(getName())
+
+
+	public void elliYasUstuMesaj() {
+		System.out.println(getName() + " 50 yaş üstüdür.");
 	}
 
 }

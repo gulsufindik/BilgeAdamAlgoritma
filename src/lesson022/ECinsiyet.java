@@ -1,7 +1,6 @@
 package lesson022;
 
-public class ECinsiyet {
+public enum ECinsiyet {
 	
-	
-
+	KADIN, ERKEK
 }
